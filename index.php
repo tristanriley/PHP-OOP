@@ -1,3 +1,5 @@
+LECTURE 1
+
 class Harry {
 	//class body
 	//class body
@@ -121,3 +123,65 @@ $Hermione1->firstName = “Hermione”;
 $Hermione1->lastName = “Granger”;
 print “The girls’s name is {$Hermione1->getName()}.”;
 //The girls’s name is Hermione Granger.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+LECTURE 2
+
+class cat {
+public $firstName;
+public $lastName;
+public $breed;
+	function __construct($title, $firstName, $lastName, $breed) {
+	$this->firstName = $firstName;
+	$this->lastName = $lastName;
+	$this->breed = $breed;
+	}
+
+	function getName() {
+	return “{$this->firstName}” .
+	“{$this->lastName}”;
+	}
+}
+
+class bunny {
+public $firstName;
+public $lastName;
+public $breed;
+	function __construct($title, $firstName, $lastName, $breed) {
+	$this->firstName = $firstName;
+	$this->lastName = $lastName;
+	$this->breed = $breed;
+	}
+	
+	function getName() {
+	return “{$this->firstName}” .
+	“{$this->lastName}”;
+	}
+}
+
+class turtle{
+public $firstName;
+public $lastName;
+public $breed;
+	function __construct($title, $firstName, $lastName, $breed) {
+	$this->firstName = $firstName;
+	$this->lastName = $lastName;
+	$this->breed = $breed;
+	}
+	
+	function getName() {
+	return “{$this->firstName}” .
+	“{$this->lastName}”;
+	}
+}
+
+///////////////////////////////////////////////////////////////////////
+
+$cat1 = new cat(“Meow”, “Whitaker”, “Bengal cat”);
+print “cat 1: {$cat1->getName()}\n;
+
+$bunny1 = new bunny(“Bugs”, “Whitaker”, “mini lop”);
+print “cat 1: {$bunny1->getName()}\n;
+
+$turtle1 = new cat(“Crush”, “Whitaker”, “spotted turtle”);
+print “turtle 1: {$turtle1->getName()}\n;
