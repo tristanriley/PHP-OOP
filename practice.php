@@ -12,8 +12,8 @@ class Cat {
 }
 
 	function getName() {
-		return “{$this->name}” .
-		“{$this->color}”;
+		return $this->name .
+		$this->color;
 	}
 }
 
